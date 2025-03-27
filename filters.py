@@ -266,7 +266,6 @@ def prewitt(image, *args):
     filtered_image = np.sqrt(filtered_image_x**2 + filtered_image_y**2)
     return Image.fromarray(np.clip(filtered_image, 0, 255).astype(np.uint8))
 
-
 def kuwahara(image, kernel_size):
     image_array = np.array(image).astype(float)
     kernel_size = int(kernel_size)

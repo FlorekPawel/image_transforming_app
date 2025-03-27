@@ -2,9 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from PIL import Image, ImageTk
 import tkinter as tk
-
 
 def plot_hist(image, plot_frame):
     fig = Figure(figsize=(5, 4), dpi=100)
